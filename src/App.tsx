@@ -1,5 +1,5 @@
-import { ReactElement, useEffect, useState } from "react";
-import "./app.scss";
+import { ReactElement, useEffect, useState } from 'react';
+import './app.scss';
 import {
   Content,
   Header,
@@ -11,14 +11,14 @@ import {
   Grid,
   Row,
   Column,
-} from "carbon-components-react";
+} from 'carbon-components-react';
 import {
   ingredientsHeaderData,
   ingredientsRowData,
-} from "./data/ingredientsData";
-import DataTableSkeletonComponent from "./components/DataTableSkeletonComponent";
-import DataTableComponent from "./components/DataTableComponent";
-import { Rows } from "./models/dataTableModels";
+} from './data/ingredientsData';
+import DataTableSkeletonComponent from './components/DataTableSkeletonComponent';
+import DataTableComponent from './components/DataTableComponent';
+import { Rows } from './models/dataTableModels';
 
 const App = (): ReactElement => {
   // State
@@ -61,13 +61,7 @@ const App = (): ReactElement => {
     <>
       <Header className="header" aria-label="IBM Carbon Tacos">
         <HeaderName href="#">Carbon Tacos</HeaderName>
-        <HeaderNavigation aria-label="IBM Carbon Tacos">
-          <HeaderMenuItem className="header__menu-item" href="#">
-            Menu
-          </HeaderMenuItem>
-          <HeaderMenuItem href="#">Ingredients</HeaderMenuItem>
-          <HeaderMenuItem href="#">Locations</HeaderMenuItem>
-        </HeaderNavigation>
+        <HeaderNavigation aria-label="IBM Carbon Tacos"></HeaderNavigation>
       </Header>
       <Content className="tacos__main-content">
         <Grid>
